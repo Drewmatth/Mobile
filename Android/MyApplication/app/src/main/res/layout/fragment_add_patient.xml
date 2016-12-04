@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ionut.myapplication.PatientController.AddPatientFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:id="@+id/PatientFirstName"
+        android:hint="First Name" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="27dp"
+        android:id="@+id/PatientLastName"
+        android:hint="Last Name"
+        android:layout_below="@+id/PatientFirstName"
+        android:layout_alignLeft="@+id/PatientFirstName"
+        android:layout_alignStart="@+id/PatientFirstName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/PatientLastName"
+        android:layout_alignRight="@+id/PatientLastName"
+        android:layout_alignEnd="@+id/PatientLastName"
+        android:layout_marginTop="25dp"
+        android:id="@+id/Email"
+        android:hint="Email" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="22dp"
+        android:id="@+id/PatientAge"
+        android:hint="Age"
+        android:layout_below="@+id/Email"
+        android:layout_alignLeft="@+id/Email"
+        android:layout_alignStart="@+id/Email" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_below="@+id/PatientAge"
+        android:layout_alignLeft="@+id/PatientAge"
+        android:layout_alignStart="@+id/PatientAge"
+        android:layout_marginTop="32dp"
+        android:id="@+id/PatientPhone"
+        android:hint="Phone" />
+
+
+    <Button
+        android:text="Add Patient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AddPatientButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp" />
+
+    <Spinner
+        android:id="@+id/cspinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/PatientPhone"
+        android:layout_alignRight="@+id/PatientPhone"
+        android:layout_alignEnd="@+id/PatientPhone"
+        android:layout_alignLeft="@+id/PatientPhone"
+        android:layout_alignStart="@+id/PatientPhone" />
+
+
+</RelativeLayout>

@@ -1,0 +1,1 @@
+# Mateescu Andrei - 234 .<br> (App pentru gestionarea angajatilor unei firme)<br> App-ul contine Navigator, Metode Asincrone, Crud , Autentificare
